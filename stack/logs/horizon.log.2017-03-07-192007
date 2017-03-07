@@ -1,0 +1,3 @@
+attodev@CNODE3:/tmp/devstack$ sudo tail -f /var/log/apache2/horizon_error.log &  echo $! >/opt/stack/status/stack/horizon.pid; fg || echo "horizon failed to star t" | tee "/opt/stack/status/stack/horizon.failure"
+[1] 15052
+sudo tail -f /var/log/apache2/horizon_error.log

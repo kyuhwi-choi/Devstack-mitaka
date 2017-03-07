@@ -1,0 +1,14 @@
+attodev@CNODE3:/tmp/devstack$ /usr/local/bin/nova-novncproxy --config-file /etc/ nova/nova.conf --web /opt/stack/noVNC & echo $! >/opt/stack/status/stack/n-novnc .pid; fg || echo "n-novnc failed to start" | tee "/opt/stack/status/stack/n-novn c.failure"
+[1] 12914
+/usr/local/bin/nova-novncproxy --config-file /etc/nova/nova.conf --web /opt/stack/noVNC
+Option "novncproxy_host" from group "DEFAULT" is deprecated. Use option "novncproxy_host" from group "vnc".
+2017-03-07 19:27:32.703 12914 WARNING oslo_reports.guru_meditation_report [-] Guru mediation now registers SIGUSR1 and SIGUSR2 by default for backward compatibility. SIGUSR1 will no longer be registered in a future release, so please use SIGUSR2 to generate reports.
+2017-03-07 19:27:32.703 12914 INFO nova.console.websocketproxy [-] WebSocket server settings:
+2017-03-07 19:27:32.703 12914 INFO nova.console.websocketproxy [-]   - Listen on 0.0.0.0:6080
+2017-03-07 19:27:32.703 12914 INFO nova.console.websocketproxy [-]   - Flash security policy server
+2017-03-07 19:27:32.703 12914 INFO nova.console.websocketproxy [-]   - Web server (no directory listings). Web root: /opt/stack/noVNC
+2017-03-07 19:27:32.704 12914 INFO nova.console.websocketproxy [-]   - No SSL/TLS support (no cert file)
+2017-03-07 19:27:32.704 12914 INFO nova.console.websocketproxy [-]   - proxying from 0.0.0.0:6080 to None:None
+2017-03-07 19:29:10.864 12914 INFO nova.console.websocketproxy [-] In exit
+2017-03-07 19:29:10.864 12914 DEBUG nova.console.websocketproxy [-] Closing socket listening at 0.0.0.0:6080 vmsg /usr/local/lib/python2.7/dist-packages/websockify/websocket.py:875
+attodev@CNODE3:/tmp/devstack$ 

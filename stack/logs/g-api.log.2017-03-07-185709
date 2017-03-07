@@ -1,0 +1,286 @@
+attodev@CNODE3:~$ /usr/local/bin/glance-api --config-file=/etc/glance/glance-api .conf & echo $! >/opt/stack/status/stack/g-api.pid; fg || echo "g-api failed to  start" | tee "/opt/stack/status/stack/g-api.failure"
+[1] 11988
+/usr/local/bin/glance-api --config-file=/etc/glance/glance-api.conf
+/usr/local/lib/python2.7/dist-packages/oslo_middleware/ssl.py:28: DeprecationWarning: The 'oslo_middleware.ssl' module usage is deprecated, please use oslo_middleware.http_proxy_to_wsgi instead
+  "oslo_middleware.http_proxy_to_wsgi")
+2017-03-07 19:17:22.933 11988 DEBUG glance.common.config [-] Loading glance-api-keystone+cachemanagement from /etc/glance/glance-api-paste.ini load_paste_app /opt/stack/glance/glance/common/config.py:257
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/cryptography/x509/__init__.py:32: PendingDeprecationWarning: CRLExtensionOID has been renamed to CRLEntryExtensionOID
+  from cryptography.x509.oid import (
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+/usr/local/lib/python2.7/dist-packages/paste/deploy/loadwsgi.py:22: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  return pkg_resources.EntryPoint.parse("x=" + s).load(False)
+2017-03-07 19:17:23.495 11988 INFO glance.image_cache [-] Image cache loaded driver 'sqlite'.
+2017-03-07 19:17:23.513 11988 INFO glance.api.middleware.cache_manage [-] Initialized image cache management middleware
+2017-03-07 19:17:23.513 11988 INFO glance.image_cache [-] Image cache loaded driver 'sqlite'.
+2017-03-07 19:17:23.515 11988 INFO glance.api.middleware.cache [-] Initialized image cache middleware
+2017-03-07 19:17:23.521 11988 WARNING keystonemiddleware.auth_token [-] signing_dir mode is 0755 instead of 0700
+2017-03-07 19:17:23.529 11988 DEBUG glance.common.config [-] ******************************************************************************** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2503
+2017-03-07 19:17:23.529 11988 DEBUG glance.common.config [-] Configuration options gathered from: log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2504
+2017-03-07 19:17:23.529 11988 DEBUG glance.common.config [-] command line args: ['--config-file=/etc/glance/glance-api.conf'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2505
+2017-03-07 19:17:23.530 11988 DEBUG glance.common.config [-] config files: ['/etc/glance/glance-api.conf'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2507
+2017-03-07 19:17:23.530 11988 DEBUG glance.common.config [-] ================================================================================ log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2508
+2017-03-07 19:17:23.530 11988 DEBUG glance.common.config [-] admin_password                 = **** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.530 11988 DEBUG glance.common.config [-] admin_role                     = admin log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.530 11988 DEBUG glance.common.config [-] admin_tenant_name              = **** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.531 11988 DEBUG glance.common.config [-] admin_user                     = **** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.531 11988 DEBUG glance.common.config [-] allow_additional_image_properties = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.531 11988 DEBUG glance.common.config [-] allow_anonymous_access         = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.531 11988 DEBUG glance.common.config [-] allowed_rpc_exception_modules  = ['glance.common.exception', 'builtins', 'exceptions'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.531 11988 DEBUG glance.common.config [-] api_limit_max                  = 1000 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.532 11988 DEBUG glance.common.config [-] auth_region                    = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.532 11988 DEBUG glance.common.config [-] auth_strategy                  = noauth log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.532 11988 DEBUG glance.common.config [-] auth_url                       = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.532 11988 DEBUG glance.common.config [-] backlog                        = 4096 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.532 11988 DEBUG glance.common.config [-] bind_host                      = 0.0.0.0 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.533 11988 DEBUG glance.common.config [-] bind_port                      = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.533 11988 DEBUG glance.common.config [-] ca_file                        = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.533 11988 DEBUG glance.common.config [-] cert_file                      = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.533 11988 DEBUG glance.common.config [-] client_socket_timeout          = 900 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.533 11988 DEBUG glance.common.config [-] config_dir                     = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.534 11988 DEBUG glance.common.config [-] config_file                    = ['/etc/glance/glance-api.conf'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.534 11988 DEBUG glance.common.config [-] control_exchange               = glance log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.534 11988 DEBUG glance.common.config [-] data_api                       = glance.db.sqlalchemy.api log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.534 11988 DEBUG glance.common.config [-] debug                          = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.534 11988 DEBUG glance.common.config [-] default_log_levels             = ['amqp=WARN', 'amqplib=WARN', 'boto=WARN', 'qpid=WARN', 'sqlalchemy=WARN', 'suds=INFO', 'oslo.messaging=INFO', 'iso8601=WARN', 'requests.packages.urllib3.connectionpool=WARN', 'urllib3.connectionpool=WARN', 'websocket=WARN', 'requests.packages.urllib3.util.retry=WARN', 'urllib3.util.retry=WARN', 'keystonemiddleware=WARN', 'routes.middleware=WARN', 'stevedore=WARN', 'taskflow=WARN', 'keystoneauth=WARN', 'oslo.cache=INFO', 'dogpile.core.dogpile=INFO'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.535 11988 DEBUG glance.common.config [-] default_publisher_id           = image.localhost log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.535 11988 DEBUG glance.common.config [-] delayed_delete                 = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.535 11988 DEBUG glance.common.config [-] digest_algorithm               = sha256 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.535 11988 DEBUG glance.common.config [-] disabled_notifications         = [] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.535 11988 DEBUG glance.common.config [-] enable_v1_api                  = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.536 11988 DEBUG glance.common.config [-] enable_v1_registry             = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.536 11988 DEBUG glance.common.config [-] enable_v2_api                  = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.536 11988 DEBUG glance.common.config [-] enable_v2_registry             = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.536 11988 DEBUG glance.common.config [-] http_keepalive                 = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.536 11988 DEBUG glance.common.config [-] image_cache_dir                = /opt/stack/data/glance/cache/ log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.537 11988 DEBUG glance.common.config [-] image_cache_driver             = sqlite log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.537 11988 DEBUG glance.common.config [-] image_cache_max_size           = 10737418240 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.537 11988 DEBUG glance.common.config [-] image_cache_sqlite_db          = cache.db log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.537 11988 DEBUG glance.common.config [-] image_cache_stall_time         = 86400 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.537 11988 DEBUG glance.common.config [-] image_location_quota           = 10 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.538 11988 DEBUG glance.common.config [-] image_member_quota             = 128 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.538 11988 DEBUG glance.common.config [-] image_property_quota           = 128 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.538 11988 DEBUG glance.common.config [-] image_size_cap                 = 1099511627776 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.538 11988 DEBUG glance.common.config [-] image_tag_quota                = 128 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.538 11988 DEBUG glance.common.config [-] instance_format                = [instance: %(uuid)s]  log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.539 11988 DEBUG glance.common.config [-] instance_uuid_format           = [instance: %(uuid)s]  log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.539 11988 DEBUG glance.common.config [-] key_file                       = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.539 11988 DEBUG glance.common.config [-] limit_param_default            = 25 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.539 11988 DEBUG glance.common.config [-] location_strategy              = location_order log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.539 11988 DEBUG glance.common.config [-] log_config_append              = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.539 11988 DEBUG glance.common.config [-] log_date_format                = %Y-%m-%d %H:%M:%S log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.540 11988 DEBUG glance.common.config [-] log_dir                        = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.540 11988 DEBUG glance.common.config [-] log_file                       = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.540 11988 DEBUG glance.common.config [-] logging_context_format_string  = %(asctime)s.%(msecs)03d %(process)d %(levelname)s %(name)s [%(request_id)s %(user_identity)s] %(instance)s%(message)s log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.540 11988 DEBUG glance.common.config [-] logging_debug_format_suffix    = %(funcName)s %(pathname)s:%(lineno)d log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.540 11988 DEBUG glance.common.config [-] logging_default_format_string  = %(asctime)s.%(msecs)03d %(process)d %(levelname)s %(name)s [-] %(instance)s%(message)s log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.540 11988 DEBUG glance.common.config [-] logging_exception_prefix       = %(asctime)s.%(msecs)03d %(process)d ERROR %(name)s %(instance)s log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.541 11988 DEBUG glance.common.config [-] logging_user_identity_format   = %(user)s %(tenant)s %(domain)s %(user_domain)s %(project_domain)s log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.541 11988 DEBUG glance.common.config [-] max_header_line                = 16384 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.541 11988 DEBUG glance.common.config [-] max_request_id_length          = 64 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.541 11988 DEBUG glance.common.config [-] memcached_servers              = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.541 11988 DEBUG glance.common.config [-] metadata_encryption_key        = **** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.542 11988 DEBUG glance.common.config [-] owner_is_tenant                = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.542 11988 DEBUG glance.common.config [-] property_protection_file       = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.542 11988 DEBUG glance.common.config [-] property_protection_rule_format = roles log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.542 11988 DEBUG glance.common.config [-] public_endpoint                = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.542 11988 DEBUG glance.common.config [-] publish_errors                 = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.542 11988 DEBUG glance.common.config [-] pydev_worker_debug_host        = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.543 11988 DEBUG glance.common.config [-] pydev_worker_debug_port        = 5678 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.543 11988 DEBUG glance.common.config [-] registry_client_ca_file        = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.543 11988 DEBUG glance.common.config [-] registry_client_cert_file      = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.543 11988 DEBUG glance.common.config [-] registry_client_insecure       = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.543 11988 DEBUG glance.common.config [-] registry_client_key_file       = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.543 11988 DEBUG glance.common.config [-] registry_client_protocol       = http log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.544 11988 DEBUG glance.common.config [-] registry_client_timeout        = 600 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.544 11988 DEBUG glance.common.config [-] registry_host                  = 10.62.11.15 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.544 11988 DEBUG glance.common.config [-] registry_port                  = 9191 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.544 11988 DEBUG glance.common.config [-] rpc_backend                    = rabbit log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.544 11988 DEBUG glance.common.config [-] scrub_pool_size                = 1 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.544 11988 DEBUG glance.common.config [-] scrub_time                     = 0 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.545 11988 DEBUG glance.common.config [-] send_identity_headers          = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.545 11988 DEBUG glance.common.config [-] show_image_direct_url          = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.545 11988 DEBUG glance.common.config [-] show_multiple_locations        = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.545 11988 DEBUG glance.common.config [-] syslog_log_facility            = LOG_USER log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.545 11988 DEBUG glance.common.config [-] tcp_keepidle                   = 600 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.546 11988 DEBUG glance.common.config [-] transport_url                  = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.546 11988 DEBUG glance.common.config [-] use_stderr                     = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.546 11988 DEBUG glance.common.config [-] use_syslog                     = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.546 11988 DEBUG glance.common.config [-] use_user_token                 = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.546 11988 DEBUG glance.common.config [-] user_storage_quota             = 0 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.546 11988 DEBUG glance.common.config [-] verbose                        = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.547 11988 DEBUG glance.common.config [-] watch_log_file                 = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.547 11988 DEBUG glance.common.config [-] workers                        = 3 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2517
+2017-03-07 19:17:23.547 11988 DEBUG glance.common.config [-] store_type_location_strategy.store_type_preference = [] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.547 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.amqp_auto_delete = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.547 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.amqp_durable_queues = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.548 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.fake_rabbit = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.548 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.heartbeat_rate = 2 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.548 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.heartbeat_timeout_threshold = 60 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.548 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.kombu_compression = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.548 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.kombu_failover_strategy = round-robin log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.549 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.kombu_missing_consumer_retry_timeout = 60 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.549 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.kombu_reconnect_delay = 1.0 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.549 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.kombu_ssl_ca_certs =  log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.549 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.kombu_ssl_certfile =  log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.549 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.kombu_ssl_keyfile =  log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.550 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.kombu_ssl_version =  log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.550 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_ha_queues = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.550 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_host = localhost log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.550 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_hosts = ['10.62.11.15'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.550 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_interval_max = 30 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.550 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_login_method = AMQPLAIN log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.551 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_max_retries = 0 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.551 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_password = **** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.551 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_port = 5672 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.551 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_qos_prefetch_count = 0 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.551 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_retry_backoff = 2 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.552 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_retry_interval = 1 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.552 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_transient_queues_ttl = 1800 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.552 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_use_ssl = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.552 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_userid = stackrabbit log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.552 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rabbit_virtual_host = / log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.552 11988 DEBUG glance.common.config [-] oslo_messaging_rabbit.rpc_conn_pool_size = 30 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.553 11988 DEBUG glance.common.config [-] task.task_executor             = taskflow log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.553 11988 DEBUG glance.common.config [-] task.task_time_to_live         = 48 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.553 11988 DEBUG glance.common.config [-] task.work_dir                  = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.553 11988 DEBUG glance.common.config [-] paste_deploy.config_file       = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.553 11988 DEBUG glance.common.config [-] paste_deploy.flavor            = keystone+cachemanagement log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.554 11988 DEBUG glance.common.config [-] profiler.enabled               = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.554 11988 DEBUG glance.common.config [-] profiler.hmac_keys             = SECRET_KEY log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.554 11988 DEBUG glance.common.config [-] profiler.trace_sqlalchemy      = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.554 11988 DEBUG glance.common.config [-] oslo_concurrency.disable_process_locking = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.554 11988 DEBUG glance.common.config [-] oslo_concurrency.lock_path     = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.554 11988 DEBUG glance.common.config [-] oslo_messaging_notifications.driver = ['messaging'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.555 11988 DEBUG glance.common.config [-] oslo_messaging_notifications.topics = ['notifications'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.555 11988 DEBUG glance.common.config [-] oslo_messaging_notifications.transport_url = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.555 11988 DEBUG glance.common.config [-] keystone_authtoken.admin_password = **** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.555 11988 DEBUG glance.common.config [-] keystone_authtoken.admin_tenant_name = admin log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.555 11988 DEBUG glance.common.config [-] keystone_authtoken.admin_token = **** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.556 11988 DEBUG glance.common.config [-] keystone_authtoken.admin_user  = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.556 11988 DEBUG glance.common.config [-] keystone_authtoken.auth_admin_prefix =  log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.556 11988 DEBUG glance.common.config [-] keystone_authtoken.auth_host   = 127.0.0.1 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.556 11988 DEBUG glance.common.config [-] keystone_authtoken.auth_port   = 35357 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.556 11988 DEBUG glance.common.config [-] keystone_authtoken.auth_protocol = https log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.556 11988 DEBUG glance.common.config [-] keystone_authtoken.auth_section = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.557 11988 DEBUG glance.common.config [-] keystone_authtoken.auth_type   = password log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.557 11988 DEBUG glance.common.config [-] keystone_authtoken.auth_uri    = http://10.62.11.15:5000 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.557 11988 DEBUG glance.common.config [-] keystone_authtoken.auth_url    = http://10.62.11.15:35357 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.557 11988 DEBUG glance.common.config [-] keystone_authtoken.auth_version = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.557 11988 DEBUG glance.common.config [-] keystone_authtoken.cache       = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.557 11988 DEBUG glance.common.config [-] keystone_authtoken.cafile      = /opt/stack/data/ca-bundle.pem log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.558 11988 DEBUG glance.common.config [-] keystone_authtoken.certfile    = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.558 11988 DEBUG glance.common.config [-] keystone_authtoken.check_revocations_for_cached = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.558 11988 DEBUG glance.common.config [-] keystone_authtoken.default_domain_id = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.558 11988 DEBUG glance.common.config [-] keystone_authtoken.default_domain_name = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.558 11988 DEBUG glance.common.config [-] keystone_authtoken.delay_auth_decision = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.558 11988 DEBUG glance.common.config [-] keystone_authtoken.domain_id   = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.559 11988 DEBUG glance.common.config [-] keystone_authtoken.domain_name = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.559 11988 DEBUG glance.common.config [-] keystone_authtoken.enforce_token_bind = permissive log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.559 11988 DEBUG glance.common.config [-] keystone_authtoken.hash_algorithms = ['md5'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.559 11988 DEBUG glance.common.config [-] keystone_authtoken.http_connect_timeout = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.559 11988 DEBUG glance.common.config [-] keystone_authtoken.http_request_max_retries = 3 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.559 11988 DEBUG glance.common.config [-] keystone_authtoken.identity_uri = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.560 11988 DEBUG glance.common.config [-] keystone_authtoken.include_service_catalog = True log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.560 11988 DEBUG glance.common.config [-] keystone_authtoken.insecure    = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.560 11988 DEBUG glance.common.config [-] keystone_authtoken.keyfile     = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.560 11988 DEBUG glance.common.config [-] keystone_authtoken.memcache_pool_conn_get_timeout = 10 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.560 11988 DEBUG glance.common.config [-] keystone_authtoken.memcache_pool_dead_retry = 300 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.560 11988 DEBUG glance.common.config [-] keystone_authtoken.memcache_pool_maxsize = 10 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.561 11988 DEBUG glance.common.config [-] keystone_authtoken.memcache_pool_socket_timeout = 3 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.561 11988 DEBUG glance.common.config [-] keystone_authtoken.memcache_pool_unused_timeout = 60 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.561 11988 DEBUG glance.common.config [-] keystone_authtoken.memcache_secret_key = **** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.561 11988 DEBUG glance.common.config [-] keystone_authtoken.memcache_security_strategy = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.561 11988 DEBUG glance.common.config [-] keystone_authtoken.memcache_use_advanced_pool = False log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.561 11988 DEBUG glance.common.config [-] keystone_authtoken.memcached_servers = ['10.62.11.15:11211'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.561 11988 DEBUG glance.common.config [-] keystone_authtoken.password    = **** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.562 11988 DEBUG glance.common.config [-] keystone_authtoken.project_domain_id = default log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.562 11988 DEBUG glance.common.config [-] keystone_authtoken.project_domain_name = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.562 11988 DEBUG glance.common.config [-] keystone_authtoken.project_id  = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.562 11988 DEBUG glance.common.config [-] keystone_authtoken.project_name = service log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.562 11988 DEBUG glance.common.config [-] keystone_authtoken.region_name = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.562 11988 DEBUG glance.common.config [-] keystone_authtoken.revocation_cache_time = 10 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.562 11988 DEBUG glance.common.config [-] keystone_authtoken.signing_dir = /var/cache/glance/api log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.563 11988 DEBUG glance.common.config [-] keystone_authtoken.token_cache_time = 300 log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.563 11988 DEBUG glance.common.config [-] keystone_authtoken.trust_id    = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.563 11988 DEBUG glance.common.config [-] keystone_authtoken.user_domain_id = default log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.563 11988 DEBUG glance.common.config [-] keystone_authtoken.user_domain_name = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.563 11988 DEBUG glance.common.config [-] keystone_authtoken.user_id     = None log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.563 11988 DEBUG glance.common.config [-] keystone_authtoken.username    = glance log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.564 11988 DEBUG glance.common.config [-] image_format.container_formats = ['ami', 'ari', 'aki', 'bare', 'ovf', 'ova', 'docker'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.564 11988 DEBUG glance.common.config [-] image_format.disk_formats      = ['ami', 'ari', 'aki', 'vhd', 'vmdk', 'raw', 'qcow2', 'vdi', 'iso'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.564 11988 DEBUG glance.common.config [-] oslo_policy.policy_default_rule = default log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.564 11988 DEBUG glance.common.config [-] oslo_policy.policy_dirs        = ['policy.d'] log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.564 11988 DEBUG glance.common.config [-] oslo_policy.policy_file        = policy.json log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2525
+2017-03-07 19:17:23.564 11988 DEBUG glance.common.config [-] ******************************************************************************** log_opt_values /usr/local/lib/python2.7/dist-packages/oslo_config/cfg.py:2527
+2017-03-07 19:17:23.615 11988 DEBUG glance_store.backend [-] Attempting to import store glance.store.sheepdog.Store _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.615 11988 DEBUG glance_store.backend [-] Attempting to import store rbd _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.616 11988 DEBUG glance_store.backend [-] Attempting to import store http _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.616 11988 DEBUG glance_store.backend [-] Attempting to import store file _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.616 11988 DEBUG glance_store.backend [-] Attempting to import store glance.store.http.Store _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.616 11988 DEBUG glance_store.backend [-] Attempting to import store glance.store.rbd.Store _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.616 11988 DEBUG glance_store.backend [-] Attempting to import store no_conf _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.616 11988 DEBUG glance_store.backend [-] Attempting to import store s3 _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.617 11988 DEBUG glance_store.backend [-] Attempting to import store vmware _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.617 11988 DEBUG glance_store.backend [-] Attempting to import store glance.store.cinder.Store _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.617 11988 DEBUG glance_store.backend [-] Attempting to import store glance.store.filesystem.Store _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.617 11988 DEBUG glance_store.backend [-] Attempting to import store cinder _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.617 11988 DEBUG glance_store.backend [-] Attempting to import store glance.store.swift.Store _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.617 11988 DEBUG glance_store.backend [-] Attempting to import store swift _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.618 11988 DEBUG glance_store.backend [-] Attempting to import store glance.store.vmware_datastore.Store _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.618 11988 DEBUG glance_store.backend [-] Attempting to import store sheepdog _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.618 11988 DEBUG glance_store.backend [-] Attempting to import store glance.store.s3.Store _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.618 11988 DEBUG glance_store.backend [-] Registering options for group glance_store register_opts /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:80
+2017-03-07 19:17:23.618 11988 DEBUG glance_store.backend [-] Registering options for group glance_store register_opts /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:80
+2017-03-07 19:17:23.619 11988 DEBUG glance_store.backend [-] Attempting to import store http _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.619 11988 DEBUG glance_store.capabilities [-] Store glance_store._drivers.http.Store doesn't support updating dynamic storage capabilities. Please overwrite 'update_capabilities' method of the store to implement updating logics if needed. update_capabilities /usr/local/lib/python2.7/dist-packages/glance_store/capabilities.py:98
+2017-03-07 19:17:23.619 11988 DEBUG glance_store.backend [-] Registering store http with schemes ('http', 'https') create_stores /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:198
+2017-03-07 19:17:23.619 11988 DEBUG glance_store.driver [-] Late loading location class glance_store._drivers.http.StoreLocation get_store_location_class /usr/local/lib/python2.7/dist-packages/glance_store/driver.py:90
+2017-03-07 19:17:23.619 11988 DEBUG glance_store.location [-] Registering scheme http with {'location_class': <class 'glance_store._drivers.http.StoreLocation'>, 'store': <glance_store._drivers.http.Store object at 0x7f6440750750>, 'store_entry': 'http'} register_scheme_map /usr/local/lib/python2.7/dist-packages/glance_store/location.py:90
+2017-03-07 19:17:23.620 11988 DEBUG glance_store.location [-] Registering scheme https with {'location_class': <class 'glance_store._drivers.http.StoreLocation'>, 'store': <glance_store._drivers.http.Store object at 0x7f6440750750>, 'store_entry': 'http'} register_scheme_map /usr/local/lib/python2.7/dist-packages/glance_store/location.py:90
+2017-03-07 19:17:23.620 11988 DEBUG glance_store.backend [-] Attempting to import store file _load_store /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:151
+2017-03-07 19:17:23.620 11988 DEBUG glance_store.capabilities [-] Store glance_store._drivers.filesystem.Store doesn't support updating dynamic storage capabilities. Please overwrite 'update_capabilities' method of the store to implement updating logics if needed. update_capabilities /usr/local/lib/python2.7/dist-packages/glance_store/capabilities.py:98
+2017-03-07 19:17:23.620 11988 DEBUG glance_store.backend [-] Registering store file with schemes ('file', 'filesystem') create_stores /usr/local/lib/python2.7/dist-packages/glance_store/backend.py:198
+2017-03-07 19:17:23.620 11988 DEBUG glance_store.driver [-] Late loading location class glance_store._drivers.filesystem.StoreLocation get_store_location_class /usr/local/lib/python2.7/dist-packages/glance_store/driver.py:90
+2017-03-07 19:17:23.621 11988 DEBUG glance_store.location [-] Registering scheme file with {'location_class': <class 'glance_store._drivers.filesystem.StoreLocation'>, 'store': <glance_store._drivers.filesystem.Store object at 0x7f64407deb10>, 'store_entry': 'file'} register_scheme_map /usr/local/lib/python2.7/dist-packages/glance_store/location.py:90
+2017-03-07 19:17:23.621 11988 DEBUG glance_store.location [-] Registering scheme filesystem with {'location_class': <class 'glance_store._drivers.filesystem.StoreLocation'>, 'store': <glance_store._drivers.filesystem.Store object at 0x7f64407deb10>, 'store_entry': 'file'} register_scheme_map /usr/local/lib/python2.7/dist-packages/glance_store/location.py:90
+2017-03-07 19:17:23.621 11988 INFO glance.common.wsgi [-] Starting 3 workers
+2017-03-07 19:17:23.623 11988 INFO glance.common.wsgi [-] Started child 12053
+2017-03-07 19:17:23.624 12053 INFO eventlet.wsgi.server [-] (12053) wsgi starting up on http://0.0.0.0:9292
+2017-03-07 19:17:23.626 12054 INFO eventlet.wsgi.server [-] (12054) wsgi starting up on http://0.0.0.0:9292
+2017-03-07 19:17:23.625 11988 INFO glance.common.wsgi [-] Started child 12054
+2017-03-07 19:17:23.628 11988 INFO glance.common.wsgi [-] Started child 12055
+2017-03-07 19:17:23.629 12055 INFO eventlet.wsgi.server [-] (12055) wsgi starting up on http://0.0.0.0:9292
+2017-03-07 19:17:24.032 12055 DEBUG eventlet.wsgi.server [-] (12055) accepted ('10.62.11.15', 40614) server /usr/local/lib/python2.7/dist-packages/eventlet/wsgi.py:867
+2017-03-07 19:17:24.035 12055 DEBUG glance.api.middleware.version_negotiation [-] Determining version of request: GET / Accept: */* process_request /opt/stack/glance/glance/api/middleware/version_negotiation.py:46
+2017-03-07 19:17:24.036 12055 DEBUG glance.api.middleware.version_negotiation [-] Using url versioning process_request /opt/stack/glance/glance/api/middleware/version_negotiation.py:58
+2017-03-07 19:17:24.036 12055 DEBUG glance.api.middleware.version_negotiation [-] Unknown version. Returning version choices. process_request /opt/stack/glance/glance/api/middleware/version_negotiation.py:65
+2017-03-07 19:17:24.038 12055 INFO eventlet.wsgi.server [-] 10.62.11.15 - - [07/Mar/2017 19:17:24] "GET / HTTP/1.1" 300 786 0.003942
+2017-03-07 19:19:47.680 11988 INFO glance.common.wsgi [-] Removed dead child 12053
+2017-03-07 19:19:47.680 11988 DEBUG glance.common.wsgi [-] No stale children _verify_and_respawn_children /opt/stack/glance/glance/common/wsgi.py:344
+2017-03-07 19:19:47.683 11988 INFO glance.common.wsgi [-] Started child 13841
+2017-03-07 19:19:47.683 13841 INFO eventlet.wsgi.server [-] (13841) wsgi starting up on http://0.0.0.0:9292
+2017-03-07 19:19:47.683 11988 DEBUG glance.common.wsgi [-] Exited wait_on_children /opt/stack/glance/glance/common/wsgi.py:374
+2017-03-07 19:19:47.683 13841 INFO eventlet.wsgi.server [-] (13841) wsgi exited, is_accepting=True
+2017-03-07 19:19:47.684 13841 INFO glance.common.wsgi [-] Child 13841 exiting normally
+attodev@CNODE3:~$ 
